@@ -32,9 +32,15 @@ public class List {
         //Buscar elementos
         System.out.println(names.contains("Edgar"));
         System.out.println(names.contains("Rojas"));
+        names.add("Edgar");
+        names.add("Rojas");
+        names.add("Guadarrama");
+        System.out.println(names);
 
         names.clear();
         System.out.println(names.size());
+
+        System.out.println(names); 
     }
     
 }
