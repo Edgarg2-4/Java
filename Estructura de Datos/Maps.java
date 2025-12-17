@@ -37,7 +37,20 @@ public class Maps {
 
         names.put("Edgar", "Edgargmail.com");
         names.put("Edgar", "Edgar@gmail.com");
+        //Remplanzando solo si exise
+        names.replace("pepe", "pepe@gmail.com");
+        //añadir si solo sii no existe 
+        names.putIfAbsent("papoi", "papoi@gmail.com");
         System.out.println(names);
+
+        //Otras operaciones 
+        System.out.println(names.isEmpty());
+        System.out.println(names.values());
+
+        var values = names.values();
+
+        System.out.println(values);
+
 
 
     }
