@@ -16,13 +16,18 @@ public class Funciones {
 
         SendEmailToUser(names);
 
+        var state = SendEmailWithState("");
+        System.out.println(state);
+
+
+
     }
 
     public static void SendEmail(){
         System.out.println("Se envia el email");
 
     }
-
+    //Sobrecarga de funciiones 
     public static void SendEmailToUser(String email){
         System.out.println("Se envia el email a "+ email);
 
@@ -36,10 +41,17 @@ public class Funciones {
 
      public static void SendEmailToUser(String[] emails){
         for(String email: emails)
-        System.out.println("Se envia el email a "+ email);
+        SendEmailToUser(email);;
 
     }
-
+    //Funciones con retorno
+     public static boolean SendEmailWithState(String email){
+        if(email.isEmpty()){
+            return false;
+        }
+        System.out.println("Se envia el email a "+ email);
+        return true;
+    }
 
    
     
