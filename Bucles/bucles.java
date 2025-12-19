@@ -72,6 +72,23 @@ public class bucles {
         //Control de bucles
 
         //-break
+        for(String name: names){
+           
+            if(name.equals("mundo")){
+                break;
+            }
+            System.out.println(name);
+
+        }
+
+        //Continue
+          for(i=0; i < 5; i++){
+            if(i == 3){
+            continue;
+            }
+            System.out.println(i);
+        }
+
 
     }
     
